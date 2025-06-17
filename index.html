@@ -5,107 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GamePlay — Магазин техники</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f5f5; color:#333; }
-        header { background: #222; color: #fff; padding: 20px 0; text-align: center; }
-        header h1 { margin:0; }
-        header p { margin:5px 0 0; font-size: 18px; }
-        .container { width: 90%; max-width: 1100px; margin: 20px auto; }
-        .catalog, .form-section, .about, .contact { background: #fff; padding: 20px; margin: 20px 0; border-radius: 8px; }
-        .product { border-bottom: 1px solid #ddd; padding: 10px 0; }
-        .product:last-child { border: none; }
-        .product h3 { margin:0; }
-        button { background: #007bff; color:#fff; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; }
-        button:hover { background:#0056b3; }
-        form input, form select, form textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border:1px solid #ccc; }
-        footer { background: #222; color:#fff; text-align:center; padding: 10px 0; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
-    <h1>GamePlay</h1>
-    <p>Играй. Выбирай. Покупай лучшее!</p>
+    <div class="container">
+        <h1>GamePlay</h1>
+        <p>Играй. Выбирай. Покупай лучшее!</p>
+    </div>
 </header>
 
-<div class="container">
+<nav>
+    <div class="container">
+        <a href="#catalog">Каталог</a>
+        <a href="#about">О нас</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#form">Заявка</a>
+    </div>
+</nav>
 
-    <section class="about">
-        <h2>О нас</h2>
-        <p>GamePlay — ваш надёжный поставщик техники. Прямые поставки из Дубая, гарантия 12 месяцев, лучшие цены. Более 1000 довольных клиентов.</p>
-    </section>
-
-    <section class="catalog">
+<main class="container">
+    <section id="catalog">
         <h2>Каталог товаров</h2>
-
-        <div class="product">
-            <h3>PlayStation 5 Fat с дисководом — 42 000 ₽</h3>
-            <button>Оформить заявку</button>
-        </div>
-        <div class="product">
-            <h3>PlayStation 5 Slim Digital — 42 000 ₽</h3>
-            <button>Оформить заявку</button>
-        </div>
-        <div class="product">
-            <h3>PlayStation 5 Pro — 71 900 ₽</h3>
-            <button>Оформить заявку</button>
-        </div>
-        <div class="product">
-            <h3>Steam Deck OLED 256 ГБ — 53 900 ₽</h3>
-            <button>Оформить заявку</button>
-        </div>
-        <div class="product">
-            <h3>iPhone 16 Pro Max 256 GB — 102 900 ₽</h3>
-            <button>Оформить заявку</button>
-        </div>
-        <div class="product">
-            <h3>iPad 10.9" 64 GB — 29 900 ₽</h3>
-            <button>Оформить заявку</button>
-        </div>
-        <div class="product">
-            <h3>DualSense контроллеры — 6 200 ₽</h3>
-            <p>Доступные цвета: чёрный, белый, синий, фиолетовый</p>
-            <button>Оформить заявку</button>
-        </div>
-        <div class="product">
-            <h3>Шоколад из Дубая — 2 500 ₽</h3>
-            <button>Оформить заявку</button>
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/200x150" alt="PS5">
+                <h3>PlayStation 5 Fat</h3>
+                <p>42 000 ₽</p>
+                <button>Купить</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/200x150" alt="PS5 Slim">
+                <h3>PlayStation 5 Slim Digital</h3>
+                <p>42 000 ₽</p>
+                <button>Купить</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/200x150" alt="iPhone">
+                <h3>iPhone 16 Pro Max</h3>
+                <p>102 900 ₽</p>
+                <button>Купить</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/200x150" alt="Steam Deck">
+                <h3>Steam Deck OLED</h3>
+                <p>53 900 ₽</p>
+                <button>Купить</button>
+            </div>
         </div>
     </section>
 
-    <section class="form-section">
+    <section id="about">
+        <h2>О нас</h2>
+        <p>GamePlay — проверенный магазин техники. Прямые поставки, гарантия 12 месяцев, лучшие цены на рынке.</p>
+    </section>
+
+    <section id="delivery">
+        <h2>Доставка</h2>
+        <p>Бесплатная доставка по Екатеринбургу, отправка в регионы РФ транспортными компаниями. Самовывоз доступен.</p>
+    </section>
+
+    <section id="reviews">
+        <h2>Отзывы клиентов</h2>
+        <p>⭐⭐⭐⭐⭐ "Отличный магазин! Заказал PS5, доставили в тот же день!" — Иван</p>
+        <p>⭐⭐⭐⭐⭐ "Спасибо за отличный сервис и быструю доставку." — Мария</p>
+    </section>
+
+    <section id="form">
         <h2>Оставить заявку</h2>
         <form>
-            <input type="text" name="name" placeholder="Ваше имя" required>
-            <input type="tel" name="phone" placeholder="Телефон" required>
-            <input type="email" name="email" placeholder="Email (опционально)">
-            <select name="interest" required>
-                <option value="">Что вас интересует?</option>
-                <option value="Консоль">Консоль</option>
-                <option value="Смартфон">Смартфон</option>
-                <option value="Планшет">Планшет</option>
-                <option value="Аксессуары">Аксессуары</option>
-                <option value="Другое">Другое</option>
-            </select>
-            <textarea name="comment" placeholder="Комментарий (опционально)"></textarea>
-            <button type="submit">Оставить заявку</button>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="tel" placeholder="Телефон" required>
+            <textarea placeholder="Ваш комментарий"></textarea>
+            <button type="submit">Отправить заявку</button>
         </form>
-        <p>Мы не передаём данные третьим лицам. Политика конфиденциальности.</p>
     </section>
-
-    <section class="contact">
-        <h2>Контакты</h2>
-        <p>📍 Екатеринбург, ул. 8 Марта, д. 31</p>
-        <p>📞 +7 (999) 123-45-67</p>
-        <p>📧 info@gameplay.ru</p>
-        <p>🕒 Пн-Вс: 10:00–23:00</p>
-    </section>
-
-</div>
+</main>
 
 <footer>
-    &copy; 2025 GamePlay. Все права защищены.
+    <div class="container">
+        <p>Контакты: Екатеринбург, ул. 8 Марта, д. 31 | +7 (999) 123-45-67 | info@gameplay.ru</p>
+        <p>&copy; 2025 GamePlay. Все права защищены.</p>
+    </div>
 </footer>
-
 </body>
 </html>
