@@ -1,7 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
     color: #333;
 }
 header {
@@ -53,11 +56,12 @@ h2 {
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.4s, box-shadow 0.4s;
 }
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    border: 2px solid #007bff;
 }
 .card img {
     max-width: 100%;
@@ -83,12 +87,12 @@ form {
     gap: 10px;
 }
 input, textarea {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 footer {
-    background: #343a40;
+    background: #222;
     color: #fff;
     padding: 20px 0;
     margin-top: 40px;
@@ -100,4 +104,29 @@ footer {
 }
 .footer-content div {
     margin: 10px;
+}
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    display: none;
+}
+.top-button.show {
+    display: block;
+}
+@media (max-width: 600px) {
+    nav .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
 }
