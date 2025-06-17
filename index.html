@@ -1,79 +1,59 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GamePlay — Магазин техники</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>GamePlay - Магазин техники</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <div class="container">
+    <header>
         <h1>GamePlay</h1>
-        <p>Играй. Выбирай. Покупай лучшее!</p>
-    </div>
-</header>
-
-<nav>
-    <div class="container">
-        <a href="#consoles">Консоли</a>
-        <a href="#gamepads">Геймпады</a>
-        <a href="#phones">Телефоны</a>
-        <a href="#vr">VR-Очки</a>
-        <a href="#macbooks">MacBook</a>
-        <a href="#portable">Портативные приставки</a>
-        <a href="#accounts">Аккаунты</a>
-        <a href="#form">Заявка</a>
-    </div>
-</nav>
-
-<main class="container">
-    <section id="consoles">
-        <h2>Консоли</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="https://via.placeholder.com/200x150" alt="PS5">
-                <h3>PlayStation 5 Fat</h3>
-                <p>Мощная игровая консоль нового поколения с поддержкой 4K и эксклюзивных игр.</p>
-                <button>Купить</button>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/200x150" alt="PS5 Slim">
-                <h3>PlayStation 5 Slim Digital</h3>
-                <p>Ультракомпактная версия популярной консоли без дисковода.</p>
-                <button>Купить</button>
-            </div>
+        <nav>
+            <a href="#about">О компании</a>
+            <a href="#advantages">Наши преимущества</a>
+            <a href="#products">Товары</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+    <section id="hero">
+        <h2>Лучшие консоли и гаджеты по доступным ценам</h2>
+    </section>
+    <section id="about">
+        <h2>О компании</h2>
+        <p>GamePlay - это надежный поставщик игровых консолей, геймпадов, VR-очков, MacBook, портативных приставок и аккаунтов в России.</p>
+    </section>
+    <section id="advantages">
+        <h2>Наши преимущества</h2>
+        <ul>
+            <li>Низкие цены без посредников</li>
+            <li>Только оригинальные товары</li>
+            <li>Быстрая доставка и самовывоз</li>
+        </ul>
+    </section>
+    <section id="products">
+        <h2>Наши товары</h2>
+        <div class="product-card">
+            <img src="images/ps5.jpg" alt="PS5">
+            <h3>PlayStation 5</h3>
+            <p>От 39,000 ₽</p>
+        </div>
+        <div class="product-card">
+            <img src="images/dualsense.jpg" alt="DualSense">
+            <h3>DualSense</h3>
+            <p>6,200 ₽</p>
         </div>
     </section>
-    <!-- Остальные секции такие же как выше -->
-
-    <section id="form">
-        <h2>Оставить заявку</h2>
+    <section id="contact">
+        <h2>Связаться с нами</h2>
         <form>
             <input type="text" placeholder="Ваше имя" required>
-            <input type="email" placeholder="Email" required>
-            <input type="tel" placeholder="Телефон" required>
-            <textarea placeholder="Ваш комментарий" rows="4"></textarea>
-            <button type="submit">Отправить заявку</button>
+            <input type="email" placeholder="Ваш email" required>
+            <textarea placeholder="Сообщение"></textarea>
+            <button type="submit">Отправить</button>
         </form>
     </section>
-</main>
-
-<footer>
-    <div class="container footer-content">
-        <div>
-            <h4>Контакты</h4>
-            <p>📍 Екатеринбург, ул. 8 Марта, д. 31</p>
-            <p>📞 +7 (999) 123-45-67</p>
-            <p>✉️ info@gameplay.ru</p>
-        </div>
-        <div>
-            <p>&copy; 2025 GamePlay. Все права защищены.</p>
-        </div>
-    </div>
-</footer>
-
-<a href="#" class="top-button">↑ Наверх</a>
+    <button id="toTop">Наверх</button>
+    <script src="js/script.js"></script>
 </body>
 </html>
