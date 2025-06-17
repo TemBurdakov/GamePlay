@@ -1,60 +1,74 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GamePlay - Магазин техники</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GamePlay - Магазин игровой техники</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <h1>GamePlay</h1>
-        <nav>
-            <a href="#about">О компании</a>
-            <a href="#advantages">Наши преимущества</a>
-            <a href="#products">Товары</a>
-            <a href="#contact">Контакты</a>
-        </nav>
-    </header>
-    <section id="hero">
-        <h2>Лучшие консоли и гаджеты по доступным ценам</h2>
-    </section>
-    <section id="about">
-        <h2>О компании</h2>
-        <p>GamePlay - это надежный поставщик игровых консолей, геймпадов, VR-очков, MacBook, портативных приставок и аккаунтов в России.</p>
-    </section>
-    <section id="advantages">
-        <h2>Наши преимущества</h2>
-        <ul>
-            <li>Низкие цены без посредников</li>
-            <li>Только оригинальные товары</li>
-            <li>Быстрая доставка и самовывоз</li>
-        </ul>
-    </section>
-    <section id="products">
-        <h2>Наши товары</h2>
-        <div class="product-card">
-            <img src="images/ps5.jpg" alt="PS5">
-            <h3>PlayStation 5</h3>
-            <p>От 39,000 ₽</p>
-        </div>
-        <div class="product-card">
-            <img src="images/dualsense.jpg" alt="DualSense">
-            <h3>DualSense</h3>
-            <p>6,200 ₽</p>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Связаться с нами</h2>
-        <form>
-            <input type="text" placeholder="Ваше имя" required>
-            <input type="email" placeholder="Ваш email" required>
-            <textarea placeholder="Сообщение"></textarea>
-            <button type="submit">Отправить</button>
-        </form>
-    </section>
-    <button id="toTop">Наверх</button>
-    <script src="js/script.js"></script>
+<header>
+  <div class="container">
+    <div class="logo">GamePlay</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#consoles">Консоли</a></li>
+        <li><a href="#gamepads">Геймпады</a></li>
+        <li><a href="#phones">Телефоны</a></li>
+        <li><a href="#vr">VR-очки</a></li>
+        <li><a href="#macbook">MacBook</a></li>
+        <li><a href="#portable">Портативные приставки</a></li>
+        <li><a href="#accounts">Аккаунты</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>GamePlay — ваш магазин игровой техники</h1>
+      <p>Консоли, геймпады, телефоны, VR, MacBook и многое другое</p>
+    </div>
+  </section>
+  <!-- Категории товаров (заглушки) -->
+  <section id="consoles" class="product-category">
+    <h2>Консоли</h2>
+    <div class="products swiper"><div class="swiper-wrapper"><div class="product-card swiper-slide"><div class="img-placeholder">Фото</div><h3>PS5 с дисководом</h3><p class="price">от ___ ₽</p></div></div><div class="swiper-pagination"></div></div>
+  </section>
+  <section class="about-company">
+    <div class="container">
+      <h2>О компании</h2>
+      <p>GamePlay — это современный магазин игровой техники...</p>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="container">
+      <h2>Наши преимущества</h2>
+      <ul>
+        <li>Оригинальная техника с гарантией</li>
+        <li>Широкий ассортимент и акции</li>
+        <li>Доставка по России</li>
+        <li>Поддержка клиентов</li>
+      </ul>
+    </div>
+  </section>
+  <section class="order-form">
+    <div class="container">
+      <h2>Оставьте заявку</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Ваше имя" required />
+        <input type="tel" placeholder="Телефон" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Комментарий"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+</main>
+<footer><div class="container"><p>© 2025 GamePlay.</p></div></footer>
+<button id="btn-up" title="Наверх">↑</button>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
